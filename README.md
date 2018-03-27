@@ -16,14 +16,16 @@ Example: CREATE USER IF NOT EXISTS adminuser WITH PASSWORD 'adminuserpassword' S
 
 ## Common Operations:
 ###### Create User:
-https://docs.datastax.com/en/cql/3.1/cql/cql_reference/create_user_r.html
 1.	Create DBA User:
 ```CREATE USER IF NOT EXISTS cassdba WITH PASSWORD 'cassdba' SUPERUSER;```
 2.	Create Application User:
 ```CREATE USER IF NOT EXISTS <user_name> WITH PASSWORD '<password>' NOSUPERUSER;```
 
+https://docs.datastax.com/en/cql/3.1/cql/cql_reference/create_user_r.html
+
 ###### List All Users:
 ```LIST USERS;```
+
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/list_users_r.html
 
 ###### Alter User:
