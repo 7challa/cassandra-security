@@ -17,10 +17,10 @@ Example: CREATE USER IF NOT EXISTS adminuser WITH PASSWORD 'adminuserpassword' S
 ## Common Operations:
 `Create User`:
 For DBA User/Superuser:
-```CREATE USER IF NOT EXISTS cassdba WITH PASSWORD 'cassdba' SUPERUSER;```
+```CREATE USER IF NOT EXISTS cassdba WITH PASSWORD 'cassdba' __SUPERUSER__;```
 
 Create Application User/Non-Superuser:
-```CREATE USER IF NOT EXISTS <user_name> WITH PASSWORD '<password>' NOSUPERUSER;```
+```CREATE USER IF NOT EXISTS <user_name> WITH PASSWORD '<password>' __NOSUPERUSER__;```
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/create_user_r.html
 
