@@ -23,30 +23,30 @@ Example: CREATE USER IF NOT EXISTS adminuser WITH PASSWORD 'adminuserpassword' S
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/create_user_r.html
 
-###### List All Users:
+`List All Users`:
 ```LIST USERS;```
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/list_users_r.html
 
-###### Alter User:
+`Alter User`:
 ```ALTER USER <user_name> WITH PASSWORD '<password>' NOSUPERUSER;```
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/alter_user_r.html
 
-###### Drop User:
+`Drop User`:
 ```DROP USER IF EXISTS <user_name>;```
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/drop_user_r.html
 
-###### Grant Permission:
+`Grant Permission`:
 Grant Application User Access:
 ```GRANT SELECT PERMISSION ON KEYSPACE <keyspace> TO <user_name>;```
 ```GRANT MODIFY PERMISSION ON KEYSPACE <keyspace> TO <user_name>;```
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/grant_r.html
 
-###### Revoke Permission:
+`Revoke Permission`:
 ```REVOKE MODIFY ON KEYSPACE <keyspace> FROM <user_name>;```
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/revoke_r.html
 
-###### List Permissions:
+`List Permissions`:
 To List All Permissions of a use to a keyspace:
 ```LIST ALL PERMISSIONS ON  KEYSPACE <keyspace> ;```
 
