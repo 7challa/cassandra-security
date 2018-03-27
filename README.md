@@ -14,7 +14,7 @@ Example: CREATE USER IF NOT EXISTS adminuser WITH PASSWORD 'adminuserpassword' S
 
 
 
-__Common Operations__:
+##Common Operations:
 ###### Create User:
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/create_user_r.html
 1.	Create DBA User:
