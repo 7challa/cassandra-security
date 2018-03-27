@@ -15,7 +15,7 @@ Example: CREATE USER IF NOT EXISTS adminuser WITH PASSWORD 'adminuserpassword' S
 
 
 ## Common Operations:
-###### Create User:
+`Create User`:
 1.	Create DBA User:
 ```CREATE USER IF NOT EXISTS cassdba WITH PASSWORD 'cassdba' SUPERUSER;```
 2.	Create Application User:
