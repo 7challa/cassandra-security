@@ -30,16 +30,19 @@ https://docs.datastax.com/en/cql/3.1/cql/cql_reference/list_users_r.html
 
 `Alter User`:
 ```ALTER USER <user_name> WITH PASSWORD '<password>' NOSUPERUSER;```
+
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/alter_user_r.html
 
 `Drop User`:
 ```DROP USER IF EXISTS <user_name>;```
+
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/drop_user_r.html
 
 `Grant Permission`:
-Grant Application User Access:
 ```GRANT SELECT PERMISSION ON KEYSPACE <keyspace> TO <user_name>;```
+
 ```GRANT MODIFY PERMISSION ON KEYSPACE <keyspace> TO <user_name>;```
+
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/grant_r.html
 
 `Revoke Permission`:
