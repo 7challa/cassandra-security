@@ -21,7 +21,7 @@ For DBA User/Superuser:
 
 ```CREATE USER IF NOT EXISTS cassdba WITH PASSWORD 'cassdba' SUPERUSER;```
 
-Create Application User/Non-Superuser:
+For Application User/Non-Superuser:
 
 ```CREATE USER IF NOT EXISTS <user_name> WITH PASSWORD '<password>' NOSUPERUSER;```
 
