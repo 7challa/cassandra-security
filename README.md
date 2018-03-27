@@ -18,35 +18,35 @@ __Common Operations__:
 ###### Create User:
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/create_user_r.html
 1.	Create DBA User:
-CREATE USER IF NOT EXISTS cassdba WITH PASSWORD 'cassdba' SUPERUSER;
+```CREATE USER IF NOT EXISTS cassdba WITH PASSWORD 'cassdba' SUPERUSER;```
 2.	Create Application User:
-CREATE USER IF NOT EXISTS <user_name> WITH PASSWORD '<password>' NOSUPERUSER ;
+```CREATE USER IF NOT EXISTS <user_name> WITH PASSWORD '<password>' NOSUPERUSER;```
 
 ###### List All Users:
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/list_users_r.html
-LIST USERS;
+```LIST USERS;```
 
 ###### Alter User:
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/alter_user_r.html
-ALTER USER <user_name> WITH PASSWORD '<password>' NOSUPERUSER ;
+```ALTER USER <user_name> WITH PASSWORD '<password>' NOSUPERUSER;```
 
 ###### Drop User:
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/drop_user_r.html
-DROP USER IF EXISTS <user_name>;
+```DROP USER IF EXISTS <user_name>;```
 
 ###### Grant Permission:
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/grant_r.html
 Grant Application User Access:
-GRANT SELECT PERMISSION ON KEYSPACE <keyspace> TO <user_name>;
-GRANT MODIFY PERMISSION ON KEYSPACE <keyspace> TO <user_name>;
+```GRANT SELECT PERMISSION ON KEYSPACE <keyspace> TO <user_name>;```
+```GRANT MODIFY PERMISSION ON KEYSPACE <keyspace> TO <user_name>;```
 
 ###### Revoke Permission:
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/revoke_r.html
-REVOKE MODIFY ON KEYSPACE <keyspace> FROM <user_name>;
+```REVOKE MODIFY ON KEYSPACE <keyspace> FROM <user_name>;```
 
 ###### List Permissions:
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/list_permissions_r.html
 To List All Permissions of a use to a keyspace:
-LIST ALL PERMISSIONS ON  KEYSPACE <keyspace> ;
+```LIST ALL PERMISSIONS ON  KEYSPACE <keyspace> ;```
 TO List ALL permissions of a user across all the keyspaces:
-LIST ALL PERMISSIONS OF <user-name>
+```LIST ALL PERMISSIONS OF <user-name>;```
