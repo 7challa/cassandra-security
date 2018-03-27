@@ -23,30 +23,32 @@ https://docs.datastax.com/en/cql/3.1/cql/cql_reference/create_user_r.html
 ```CREATE USER IF NOT EXISTS <user_name> WITH PASSWORD '<password>' NOSUPERUSER;```
 
 ###### List All Users:
-https://docs.datastax.com/en/cql/3.1/cql/cql_reference/list_users_r.html
 ```LIST USERS;```
+https://docs.datastax.com/en/cql/3.1/cql/cql_reference/list_users_r.html
 
 ###### Alter User:
-https://docs.datastax.com/en/cql/3.1/cql/cql_reference/alter_user_r.html
 ```ALTER USER <user_name> WITH PASSWORD '<password>' NOSUPERUSER;```
+https://docs.datastax.com/en/cql/3.1/cql/cql_reference/alter_user_r.html
 
 ###### Drop User:
-https://docs.datastax.com/en/cql/3.1/cql/cql_reference/drop_user_r.html
 ```DROP USER IF EXISTS <user_name>;```
+https://docs.datastax.com/en/cql/3.1/cql/cql_reference/drop_user_r.html
 
 ###### Grant Permission:
-https://docs.datastax.com/en/cql/3.1/cql/cql_reference/grant_r.html
 Grant Application User Access:
 ```GRANT SELECT PERMISSION ON KEYSPACE <keyspace> TO <user_name>;```
 ```GRANT MODIFY PERMISSION ON KEYSPACE <keyspace> TO <user_name>;```
+https://docs.datastax.com/en/cql/3.1/cql/cql_reference/grant_r.html
 
 ###### Revoke Permission:
-https://docs.datastax.com/en/cql/3.1/cql/cql_reference/revoke_r.html
 ```REVOKE MODIFY ON KEYSPACE <keyspace> FROM <user_name>;```
+https://docs.datastax.com/en/cql/3.1/cql/cql_reference/revoke_r.html
 
 ###### List Permissions:
-https://docs.datastax.com/en/cql/3.1/cql/cql_reference/list_permissions_r.html
 To List All Permissions of a use to a keyspace:
 ```LIST ALL PERMISSIONS ON  KEYSPACE <keyspace> ;```
+
 TO List ALL permissions of a user across all the keyspaces:
 ```LIST ALL PERMISSIONS OF <user-name>;```
+
+https://docs.datastax.com/en/cql/3.1/cql/cql_reference/list_permissions_r.html
