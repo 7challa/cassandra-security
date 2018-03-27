@@ -27,11 +27,15 @@ For Application User/Non-Superuser:
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/create_user_r.html
 
+
+
 __List All Users:__
 
 ```LIST USERS;```
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/list_users_r.html
+
+
 
 __Alter User:__
 
@@ -39,11 +43,15 @@ __Alter User:__
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/alter_user_r.html
 
+
+
 __Drop User:__
 
 ```DROP USER IF EXISTS <user_name>;```
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/drop_user_r.html
+
+
 
 __Grant Permission:__
 
@@ -53,10 +61,14 @@ __Grant Permission:__
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/grant_r.html
 
+
+
 __Revoke Permission:__
 
 ```REVOKE MODIFY ON KEYSPACE <keyspace> FROM <user_name>;```
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/revoke_r.html
+
+
 
 __List Permissions:__
 
