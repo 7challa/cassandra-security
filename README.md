@@ -15,7 +15,7 @@ Example: CREATE USER IF NOT EXISTS adminuser WITH PASSWORD 'adminuserpassword' S
 
 
 ## Common Operations:
-`Create User`:
+__Create User:__
 
 For DBA User/Superuser:
 
@@ -27,25 +27,25 @@ For Application User/Non-Superuser:
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/create_user_r.html
 
-`List All Users`:
+__List All Users:__
 
 ```LIST USERS;```
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/list_users_r.html
 
-`Alter User`:
+__Alter User:__
 
 ```ALTER USER <user_name> WITH PASSWORD '<password>' NOSUPERUSER;```
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/alter_user_r.html
 
-`Drop User`:
+__Drop User:__
 
 ```DROP USER IF EXISTS <user_name>;```
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/drop_user_r.html
 
-`Grant Permission`:
+__Grant Permission:__
 
 ```GRANT SELECT PERMISSION ON KEYSPACE <keyspace> TO <user_name>;```
 
@@ -53,12 +53,12 @@ https://docs.datastax.com/en/cql/3.1/cql/cql_reference/drop_user_r.html
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/grant_r.html
 
-`Revoke Permission`:
+__Revoke Permission:__
 
 ```REVOKE MODIFY ON KEYSPACE <keyspace> FROM <user_name>;```
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/revoke_r.html
 
-`List Permissions`:
+__List Permissions:__
 
 To List All Permissions of a use to a keyspace:
 ```LIST ALL PERMISSIONS ON  KEYSPACE <keyspace> ;```
