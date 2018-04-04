@@ -73,9 +73,11 @@ https://docs.datastax.com/en/cql/3.1/cql/cql_reference/revoke_r.html
 __List Permissions:__
 
 To List All Permissions of a use to a keyspace:
+
 ```LIST ALL PERMISSIONS ON  KEYSPACE <keyspace> ;```
 
 To List ALL permissions of a user across all the keyspaces:
+
 ```LIST ALL PERMISSIONS OF <user-name>;```
 
 https://docs.datastax.com/en/cql/3.1/cql/cql_reference/list_permissions_r.html
